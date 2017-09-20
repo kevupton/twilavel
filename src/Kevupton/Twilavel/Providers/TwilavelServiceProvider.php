@@ -3,7 +3,7 @@
 use Illuminate\Support\ServiceProvider;
 use Kevupton\Twilavel\Twilio;
 
-class LaravelTwilioServiceProvider extends ServiceProvider {
+class TwilavelServiceProvider extends ServiceProvider {
 
     const SINGLETON = 'laravel-twilio';
 

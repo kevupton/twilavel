@@ -9,7 +9,7 @@
 namespace Kevupton\Twilavel\Facades;
 
 use Illuminate\Support\Facades\Facade;
-use Kevupton\Twilavel\Providers\LaravelTwilioServiceProvider;
+use Kevupton\Twilavel\Providers\TwilavelServiceProvider;
 
 class Twilio extends Facade
 {
@@ -18,5 +18,5 @@ class Twilio extends Facade
      *
      * @return string
      */
-    protected static function getFacadeAccessor() { return LaravelTwilioServiceProvider::SINGLETON; }
+    protected static function getFacadeAccessor() { return TwilavelServiceProvider::SINGLETON; }
 }

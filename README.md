@@ -6,7 +6,7 @@ Implementation of Laravel / Lumen Twilio
 ```php
 <?php
 // add directly from the app 
-$app->register(\Kevupton\LaravelTwilio\Providers\LaravelTwilioServiceProvider::class);
+$app->register(\Kevupton\Twilavel\Providers\TwilavelServiceProvider::class);
 ```
 
 OR
@@ -18,7 +18,7 @@ All service providers are registered in the `config/app.php` configuration file.
 'providers' => [
     // Other Service Providers
 
-    \Kevupton\LaravelTwilio\Providers\LaravelTwilioServiceProvider::class,
+    \Kevupton\Twilavel\Providers\TwilavelServiceProvider::class,
 ],
 ```
 
@@ -60,7 +60,7 @@ Using the Facade
 ```php
 <?php 
 
-\Twilio::message(new \Kevupton\LaravelTwilio\Messages\BasicMessage('+61 123 456 789', 'Custom Body', 'From'));
+\Twilio::message(new \Kevupton\Twilavel\Messages\BasicMessage('+61 123 456 789', 'Custom Body', 'From'));
 
 ```
 
@@ -77,7 +77,7 @@ Custom Message Example:
 
 namespace App\Twilio\Messages;
 
-use \Kevupton\LaravelTwilio\Messages\Message;
+use \Kevupton\Twilavel\Messages\Message;
 use App\Models\User;
 
 class VerifyPhone extends Message {
