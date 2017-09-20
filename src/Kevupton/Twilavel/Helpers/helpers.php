@@ -1,10 +1,10 @@
 <?php
 
-define('LARAVEL_TWILIO_CONFIG', 'twilio');
+define('TWILAVEL_CONFIG', 'twilio');
 
 if (!function_exists('lt_log_override')) {
     function lt_log_override () {
-        return trim(strtolower("" . lt_conf('log_override'))) === 'true';
+        return lt_conf('log_override', false);
     }
 }
 
@@ -18,7 +18,7 @@ if (!function_exists('lt_conf')) {
      * @return mixed
      */
     function lt_conf($prop, $default = '') {
-        return config(LARAVEL_TWILIO_CONFIG . '.' . $prop, $default);
+        return config(TWILAVEL_CONFIG . '.' . $prop, $default);
     }
 }
 
@@ -68,7 +68,7 @@ if (!function_exists('lt_log')) {
      */
     function lt_log($message, $level = 'info') {
         if (is_array($message) || is_object($message)) $message = json_encode($message, JSON_PRETTY_PRINT);
-        \Log::$level("LARAVEL-TWILIO: $message");
+        \Log::$level("TWILAVEL : $message");
     }
 }
 

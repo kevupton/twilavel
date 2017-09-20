@@ -5,7 +5,7 @@ use Kevupton\Twilavel\Twilio;
 
 class TwilavelServiceProvider extends ServiceProvider {
 
-    const SINGLETON = 'laravel-twilio';
+    const SINGLETON = 'twilavel';
 
     /**
      * Bootstrap the application services.

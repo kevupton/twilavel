@@ -48,7 +48,7 @@ return array(
     'token' => env('TWILIO_TOKEN'),
 
     // the default from which messages will be sent from
-    'from' => env('TWILIO_FROM', 'Laravel Twilio'),
+    'from' => env('TWILIO_FROM', 'Twilavel'),
 );
 
 ```
