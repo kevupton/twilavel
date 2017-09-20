@@ -40,7 +40,7 @@ class TwilavelServiceProvider extends ServiceProvider {
      * @return bool
      */
     public function is_lumen () {
-        return is_a($this->app, 'Laravel\Lumen\Application');
+        return is_a(app(), 'Laravel\Lumen\Application');
     }
 
     /**
