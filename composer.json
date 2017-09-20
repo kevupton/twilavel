@@ -16,10 +16,10 @@
     },
     "autoload": {
         "psr-4": {
-            "Kevupton\\LaravelTwilio\\": "src/Kevupton/LaravelTwilio/"
+            "Kevupton\\Twilavel\\": "src/Kevupton/Twilavel/"
         },
         "files": [
-            "src/Kevupton/LaravelTwilio/Helpers/helpers.php"
+            "src/Kevupton/Twilavel/Helpers/helpers.php"
         ]
     },
     "minimum-stability": "stable",
