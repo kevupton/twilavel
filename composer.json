@@ -1,7 +1,7 @@
 {
-    "name": "owner/package-name",
-    "description": "Bootstrap template for a laravel composer package",
-    "keywords": ["laravel", "package"],
+    "name": "kevupton/twilavel",
+    "description": "PHP Twilio for Laravel and Lumen",
+    "keywords": ["laravel", "twilio", "lumen", "php", "twilio php"],
     "type": "Extension",
     "license": "MIT",
     "authors": [
@@ -11,15 +11,20 @@
         }
     ],
     "require": {
-        "php": ">=5.3"
+        "php": ">=5.3",
+        "twilio/sdk": "^5.14"
     },
     "autoload": {
         "psr-4": {
-            "Owner\\PackageName\\": "src/Owner/PackageName/"
+            "Kevupton\\LaravelTwilio\\": "src/Kevupton/LaravelTwilio/"
         },
         "files": [
-            "src/Owner/PackageName/Helpers/helpers.php"
+            "src/Kevupton/LaravelTwilio/Helpers/helpers.php"
         ]
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "require-dev": {
+        "laravel/laravel": "^5.5",
+        "laravel/lumen": "^5.5"
+    }
 }
