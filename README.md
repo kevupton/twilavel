@@ -34,7 +34,7 @@ TWILIO_FROM=SwagApp
 
 *Execute `php artisan vendor:publish` for the complete config file.*
 
-Config: `coinpayments.php`
+Config: `twilio.php`
 ```php
 <?php
 
