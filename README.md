@@ -1,6 +1,10 @@
 # Twilavel #
 Implementation of Laravel / Lumen Twilio
 
+```
+composer require kevupton/twilavel
+```
+
 ### 1. Install Service Provider
 
 ```php
