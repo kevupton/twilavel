@@ -4,9 +4,43 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "fe02e3b0586c051a4bc48b9a1a8528e7",
-    "content-hash": "4aaa0a7e27c2dea4c5d8300fd9bcb252",
+    "hash": "0ad40c3346b078ce7fb5322e09ea87e5",
+    "content-hash": "20ca99b0a34ae766cb2140d902cabf9e",
     "packages": [
+        {
+            "name": "kevupton/laravel-package-service-provider",
+            "version": "v0.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kevupton/laravel-package-service-provider.git",
+                "reference": "b479f7ac655acee658c78907fc76e0c8f90339b3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kevupton/laravel-package-service-provider/zipball/b479f7ac655acee658c78907fc76e0c8f90339b3",
+                "reference": "b479f7ac655acee658c78907fc76e0c8f90339b3",
+                "shasum": ""
+            },
+            "require-dev": {
+                "laravel/laravel": "^5.5",
+                "laravel/lumen": "^5.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Kevupton\\LaravelPackageServiceProvider\\": "src/Kevupton/LaravelPackageServiceProvider/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Kevin upton",
+                    "email": "uptonkg@gmail.com"
+                }
+            ],
+            "description": "Service provider for laravel to allow for multiple implementations",
+            "time": "2017-12-03 08:43:54"
+        },
         {
             "name": "twilio/sdk",
             "version": "5.14.1",
