@@ -29,7 +29,7 @@ class TwilavelServiceProvider extends ServiceProvider
             return new Twilio();
         });
 
-        $this->registerConfig(TwilioFacade::class, 'Twilio');
+        $this->registerAlias(TwilioFacade::class, 'Twilio');
 
         $this->mergeConfigFrom(
             __DIR__ . '/../../../config/twilio.php', 'twilio'
