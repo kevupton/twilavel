@@ -13,7 +13,7 @@
     "require": {
         "php": ">=5.3",
         "twilio/sdk": "^5.14",
-        "kevupton/laravel-package-service-provider": "^0.0.2"
+        "kevupton/laravel-package-service-provider": "^0.0.3"
     },
     "autoload": {
         "psr-4": {
